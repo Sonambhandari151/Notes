@@ -1,5 +1,5 @@
 ### nmap
-ORT   STATE SERVICE REASON         VERSION
+PORT   STATE SERVICE REASON         VERSION
 22/tcp open  ssh     syn-ack ttl 63 OpenSSH 9.2p1 Debian 2+deb12u5 (protocol 2.0)
 | ssh-hostkey: 
 |   256 5c:02:33:95:ef:44:e2:80:cd:3a:96:02:23:f1:92:64 (ECDSA)
