@@ -1,0 +1,5 @@
+The **hosts file** is a small system file that helps your computer match domain names (like `example.com`) to IP addresses without using the internet’s DNS system.
+This is useful for **vhosting** (virtual hosting), where one server hosts multiple websites. By mapping different domain names to the same IP address, you can access different websites running on the same server.
+
+
+There are two basic ways to achieve RCE on a webserver when exploiting a file upload vulnerability: webshells, and reverse/bind shells. Realistically a fully featured reverse/bind shell is the ideal goal for an attacker; however, a webshell may be the only option available (for example, if a file length limit has been imposed on uploads, or if firewall rules prevent any network-based shells). We'll take a look at each of these in turn. As a general methodology, we would be looking to upload a shell of one kind or another, then activating it, either by navigating directly to the file if the server allows it (non-routed applications with inadequate restrictions), or by otherwise forcing the webapp to run the script for us (necessary in routed applications).
